@@ -2444,7 +2444,7 @@ Process:
           </tr>
           <tr>
             <td align="left">id-shake256</td>
-            <td align="left">2.16.840.1.101.3.4.2.18</td>
+            <td align="left">2.16.840.1.101.3.4.2.12</td>
             <td align="left">
               <xref target="FIPS.202"/></td>
           </tr>
