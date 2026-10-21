@@ -766,8 +766,8 @@ Deserialization process:
     </section>
     <section anchor="use-within-x509-and-pkix">
       <name>Use Within X.509 and PKIX</name>
-      <t>The following sections provide processing logic and the ASN.1 modules necessary to use Composite ML-DSA within X.509 and PKIX protocols. Use within the Cryptographic Message Syntax (CMS) will be covered in a separate specification.</t>
-      <t>While Composite ML-DSA keys and signature values <bcp14>MAY</bcp14> be used raw, the following sections provide conventions for using them within X.509 and other PKIX protocols such that Composite ML-DSA can be used as a drop-in replacement for existing digital signature algorithms in PKCS #10 <xref target="RFC2986"/>, CMP <xref target="RFC9810"/>, X.509 <xref target="RFC5280"/>, and related protocols.</t>
+      <t>This section, along with <xref target="sec-alg-parms"/> and <xref target="sec-asn1-module"/>, provide processing logic and the ASN.1 modules necessary to use Composite ML-DSA within X.509 and PKIX protocols. Use within the Cryptographic Message Syntax (CMS) will be covered in a separate specification.</t>
+      <t>While Composite ML-DSA keys and signature values <bcp14>MAY</bcp14> be used raw, this section provides conventions for using them within X.509 and other PKIX protocols such that Composite ML-DSA can be used as a drop-in replacement for existing digital signature algorithms in PKCS #10 <xref target="RFC2986"/>, CMP <xref target="RFC9810"/>, X.509 <xref target="RFC5280"/>, and related protocols.</t>
       <section anchor="sec-encoding-to-der">
         <name>Encoding to DER</name>
         <t>The serialization routines presented in <xref target="sec-serialization"/> produce raw binary values. When these values are required to be carried within a DER-encoded message format such as an X.509's <tt>subjectPublicKey</tt> and <tt>signatureValue</tt> BIT STRING <xref target="RFC5280"/> or a <tt>OneAsymmetricKey.privateKey OCTET STRING</tt> <xref target="RFC5958"/>, then the BIT STRING or OCTET STRING contains this raw byte string output of the appropriate serialization routine from <xref target="sec-serialization"/> without further encoding.</t>
@@ -1821,7 +1821,7 @@ While this increases the implementation burden of needing to carry multiple hash
       </section>
       <section anchor="sec-fips">
         <name>FIPS Certification</name>
-        <t>The following sections give guidance to implementers wishing to certify a composite implementation under the Federal Information Processing Standards (FIPS) program run by US NIST.</t>
+        <t>This section gives guidance to implementers wishing to certify a composite implementation under the Federal Information Processing Standards (FIPS) program run by US NIST.</t>
         <t>This guidance is not authoritative and has not been endorsed by US NIST.</t>
         <t>One of the primary design goals of this specification is for the overall composite algorithm to be able to be considered FIPS approved even when one of the component algorithms is not.</t>
         <t>Implementers seeking FIPS certification of a composite signature algorithm where only one of the component algorithms has been FIPS validated or FIPS approved should credit the FIPS-validated component algorithm with full security strength, the non-FIPS-validated component algorithm with zero security, and the overall composite should be considered at least as strong and thus FIPS approved.</t>
