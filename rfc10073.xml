@@ -134,7 +134,7 @@ In addition, the following terminology is used throughout this specification:</t
         <dt><strong>ECDSA</strong>:</dt><dd>The Elliptic Curve Digital Signature Algorithm defined in <xref target="FIPS.186-5"/>.</dd>
         <dt><strong>EdDSA, Ed25519, and Ed448</strong>:</dt><dd>The Edwards-curve Digital Signature Algorithm (EdDSA)
   defined in <xref target="RFC8410"/>, with two parameter sets: Ed25519 and Ed448.</dd>
-        <dt><strong>ML-DSA</strong>:</dt><dd>The Module-Lattice-Based Digital Signature Standard defined in <xref target="FIPS.204"/>.</dd>
+        <dt><strong>ML-DSA</strong>:</dt><dd>The Module-Lattice-Based Digital Signature Algorithm defined in <xref target="FIPS.204"/>.</dd>
         <dt><strong>PKI</strong>:</dt>
   <dd>Public Key Infrastructure, as defined in <xref target="RFC5280"/>.</dd>
         <dt><strong>Post-Quantum Traditional (PQ/T) Hybrid Scheme</strong>:</dt>
