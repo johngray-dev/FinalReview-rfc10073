@@ -2139,9 +2139,6 @@ Process:
       <t>The sizes listed below are maximums. Several factors could cause fluctuations in the size of the traditional component. For example:</t>
       <ul spacing="normal">
         <li>
-          <t>Compressed versus uncompressed Elliptic Curve (EC) points.</t>
-        </li>
-        <li>
           <t>The RSA public key <tt>(n, e)</tt> allows <tt>e</tt> to vary in size between 3 and <tt>n - 1</tt> <xref target="RFC8017"/>. Note that the size table below assumes the recommended value of <tt>e = 65537</tt>, so for RSA combinations, it is in fact not a true maximum.</t>
         </li>
         <li>
