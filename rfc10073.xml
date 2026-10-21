@@ -474,7 +474,10 @@ Signature verification process:
      algorithm specification.
      If any fail, then the entire signature validation fails.
 
-      if not ML-DSA.Verify( mldsaPK, M', mldsaSig, mldsa_ctx=Label ) then
+      if not ML-DSA.Verify( mldsaPK,
+                            M',
+                            mldsaSig,
+                            mldsa_ctx=Label ) then
           output "Invalid signature"
 
       if not Trad.Verify( tradPK, M', tradSig ) then
