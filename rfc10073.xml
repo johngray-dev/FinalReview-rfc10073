@@ -525,7 +525,7 @@ The functions defined in this section are considered internal implementation det
           </tr>
         </tbody>
       </table>
-      <t>While ML-DSA has a single fixed-size representation for each of public key, private key (seed), and signature, a traditional component algorithm might allow multiple valid encodings. For example, standardized encodings exist for RSA keys both as a single private exponen <tt>d</tt> or in Chinese Remainder Theorem form <xref section="A.1.2" target="RFC8017"/>. In order to obtain interoperability, composite algorithms <bcp14>MUST</bcp14> use the following encodings of the underlying components:</t>
+      <t>While ML-DSA has a single fixed-size representation for each of public key, private key (seed), and signature, a traditional component algorithm might allow multiple valid encodings. For example, standardized encodings exist for RSA keys both as a single private exponent <tt>d</tt> or in Chinese Remainder Theorem from <xref section="A.1.2" target="RFC8017"/>. In order to obtain interoperability, composite algorithms <bcp14>MUST</bcp14> use the following encodings of the underlying components:</t>
       <ul spacing="normal">
         <li>
           <t><strong>ML-DSA</strong>: The private key <bcp14>MUST</bcp14> be the 32-byte seed value (ξ) specified in Section 5.1 of <xref target="FIPS.204"/>.  The signature and public key format are encoded as specified in Section 7.2 of <xref target="FIPS.204"/>.</t>
