@@ -755,7 +755,7 @@ Deserialization process:
      RSA and ECDSA may not, depending on encoding, so rigorous
      length-checking is not always possible here.
 
-  3. Output the component signature values.
+  2. Output the component signature values.
 
      output (mldsaSig, tradSig)]]></artwork>
 
