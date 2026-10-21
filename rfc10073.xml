@@ -460,7 +460,7 @@ Signature verification process:
      (mldsaPK, tradPK)       = DeserializePublicKey(pk)
      (mldsaSig, tradSig)  = DeserializeSignatureValue(s)
 
-   If Error during deserialization, or if any of the component
+   If an error occurs during deserialization, or if any of the component
    keys or signature values are not of the correct type or
    length for the given component algorithm, then output
    "Invalid signature" and stop.
