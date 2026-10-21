@@ -1722,13 +1722,13 @@ END
 	    algorithms, then why attack the hybrid-signed message at all when
 	    they could simply forge a completely new message? The answer to
 	    this question must be found outside the cryptographic primitives
-	    themselves and instead in policy. Once an algorithm is known to
+	    themselves, and instead in policy; once an algorithm is known to
 	    be broken, it ought to be disallowed for single-algorithm use by
-	    cryptographic policy, while hybrids involving that algorithm may
-	    continue to be used and to provide value, and also in the fact
-	    that the composite public key could be trusted by the verifier
-	    while the component keys in isolation are not, thus requiring the
-	    adversary to forge a whole composite signature.</t>
+		cryptographic policy. Meanwhile, hybrids involving that algorithm may
+	    continue to be used and to provide value, motivated by the fact
+	    that when the composite public key is trusted by the verifier
+	    but the component keys in isolation are not, a successful attack
+        would require the adversary to forge both halves of the composite signature.</t>
 	  </li>
 	  <li>
             <t>
