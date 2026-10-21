@@ -1927,7 +1927,7 @@ Process:
       </section>
       <section anchor="interoperability-of-legacy-algorithms">
         <name>Interoperability of Legacy Algorithms</name>
-<t>The legacy component algorithms, particularly RSA and ECDSA, can themselves have interoperability issues that will propagate to become interoperability issues in the composite. For example, this specification RECOMMENDS an RSA exponent of 65537, but other values are possible.</t>
+<t>The legacy component algorithms, particularly RSA and ECDSA, can themselves have interoperability issues that will propagate to become interoperability issues in the composite. For example, an RSA exponent of 65537 is <bcp14>RECOMMENDED</bcp14> in this specification, but other values are possible.</t>
         <t>Implementations are encouraged to be lenient when parsing the key material of the legacy algorithm. In particular, the recommendation is to use existing implementations of the legacy algorithms that already handle all the variation seen in the wild.</t>
 
 </section>
