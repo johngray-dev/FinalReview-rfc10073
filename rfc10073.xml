@@ -1160,7 +1160,7 @@ sa-MLDSA44-ECDSA-P256-SHA256 SIGNATURE-ALGORITHM ::=
         </dl>
 
       <t>For all RSA key types and sizes, the exponent is <bcp14>RECOMMENDED</bcp14> to be 65537. Implementations <bcp14>MAY</bcp14> support only 65537 and reject other exponent values. Legacy RSA implementations that use other values for the exponent <bcp14>MAY</bcp14> be used within a composite but need to be careful when interoperating with other implementations.</t>
-      <t>Note: The pre-hash functions were chosen to roughly match the security level of the stronger component. In the case of Ed25519 and Ed448, they match the hash functions defined in <xref target="RFC8032"/>: SHA512 for Ed25519ph and SHAKE256(x, 64), which is SHAKE256 producing 64 bytes (512 bits) of output, for Ed448ph.</t>
+      <aside><t>Note: The pre-hash functions were chosen to roughly match the security level of the stronger component. In the case of Ed25519 and Ed448, they match the hash functions defined in <xref target="RFC8032"/>: SHA512 for Ed25519ph and SHAKE256(x, 64), which is SHAKE256 producing 64 bytes (512 bits) of output, for Ed448ph.</t></aside>
       <section anchor="rsassa-pss-params">
         <name>RSASSA-PSS Parameters</name>
         <t>Use of RSASSA-PSS <xref target="RFC8017"/> requires extra parameters to be specified.</t>
