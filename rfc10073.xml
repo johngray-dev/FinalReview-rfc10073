@@ -483,9 +483,9 @@ Signature verification process:
       if all succeeded, then
          output "Valid signature"]]></artwork>
         <t>Note that in Step 4 above, the function fails early if the first
-component fails to verify.  Since no private keys are involved in a
-signature verification, there are no timing attacks to consider, so
-this is okay.</t>
+component fails to verify.  This is okay since there are no timing 
+attacks to consider as no private keys are involved in a
+signature verification.</t>
         <t>As with <tt>Composite-ML-DSA.Sign()</tt>, there are two different context strings <tt>ctx</tt> at play: the application context <tt>ctx</tt> and the <tt>mldsa_ctx</tt>, which behave the same in <tt>Verify()</tt> as they do in <tt>Sign()</tt>.</t>
       </section>
     </section>
