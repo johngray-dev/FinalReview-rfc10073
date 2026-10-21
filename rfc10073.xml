@@ -595,7 +595,7 @@ Output:
 Deserialization process:
 
   1. Parse each constituent encoded public key.
-     The length of the mldsaKey is known based on the
+     The length of mldsaPK is known based on the
      size of the ML-DSA component key length specified
      by the OID.
 
